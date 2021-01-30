@@ -10,4 +10,4 @@ set(CMAKE_CXX_STANDARD 14)
 # main
 set(src main.c lwc_module.c lwc_module.h)
 add_executable(lwcm ${src})
-target_link_libraries(lwcm)
+target_link_libraries(lwcm serialport)
