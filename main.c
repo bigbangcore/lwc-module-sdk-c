@@ -71,6 +71,8 @@ int serial_open(const char *path)
     return 0;
 }
 
+static int serial_close() { return 0; }
+
 static int write_func(const void *ctx, const unsigned char *data, size_t length) { return 0; }
 
 static int read_func(const void *ctx, unsigned char *data, size_t *length) { return 0; }
